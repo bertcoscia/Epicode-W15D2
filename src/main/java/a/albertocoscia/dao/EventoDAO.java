@@ -28,7 +28,7 @@ public class EventoDAO {
     public Evento getById(long eventId) {
         Evento found = em.find(Evento.class, eventId);
         if (found == null) throw new NotFoundException(eventId);
-        return found
+        return found;
     }
 
     public void getByIdAndDelete(long eventId) {

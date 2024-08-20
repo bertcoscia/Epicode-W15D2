@@ -27,8 +27,6 @@ public class Evento {
     public Evento() {
     }
 
-    ;
-
     public Evento(String titolo, LocalDate data, String desc, EventoTipo tipo, int maxPax) {
         this.titolo = titolo;
         this.dataEvento = data;
@@ -79,5 +77,17 @@ public class Evento {
 
     public void setMaxPax(int maxPax) {
         this.maxPax = maxPax;
+    }
+
+    @Override
+    public String toString() {
+        return "Evento{" +
+                "id=" + id +
+                ", titolo='" + titolo + '\'' +
+                ", dataEvento=" + dataEvento +
+                ", descrizione='" + descrizione + '\'' +
+                ", tipoEvento=" + tipoEvento +
+                ", maxPax=" + maxPax +
+                '}';
     }
 }
